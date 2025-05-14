@@ -101,7 +101,15 @@ footer {
   border-color: #27ae60;
 }
 
-
+.login-create {
+  background-color: #f2f2f2;
+  padding: 30px 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
 
 .login-create h2 {
   font-size: 1.8em;
@@ -109,7 +117,23 @@ footer {
   color: #333;
 }
 
-login-create-links a:hover {
+.login-create-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.login-create-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #333;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.login-create-links a:hover {
   background-color: #27ae60;
   color: white;
   border-color: #27ae60;
