@@ -7,115 +7,25 @@
 </head>
 <body>
   <header>
-    <h1>Unique Style</h1>
-    <nav>
-      <a href="#" onclick="showCart()">🛒 View Cart (<span id="cart-count">0</span>)</a>
-    </nav>
+    <h1>🛍️ Unique Style</h1>
+    <p>Your store for clothing, shoes, and jewelry</p>
   </header>
 
   <main>
+    <!-- Clothing Section -->
     <section class="category">
-      <h2>Clothes</h2>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gerberchildrenswear.com%2Fproducts%2F1-pack-infant-and-toddler-neutral-light-blue-straight-fit-jeans-evyr-d&psig=AOvVaw1ySvd3TlOFtguNesjviS3c&ust=1747271289858000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjdxvfioY0DFQAAAAAdAAAAABAL" alt="Jeans">
-          <p>Jeans</p>
-          <button onclick="addToCart('Jeans')">Add to Cart</button>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/200x150?text=Shorts" alt="Shorts">
-          <p>Shorts</p>
-          <button onclick="addToCart('Shorts')">Add to Cart</button>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/200x150?text=Shirts" alt="Shirts">
-          <p>Shirts</p>
-          <button onclick="addToCart('Shirts')">Add to Cart</button>
-        </div>
+      <h2>👕 Clothing</h2>
+      <div class="products">
+        <div class="product"><img src="https://via.placeholder.com/200x150?text=Jeans" alt="Jeans"><p>Jeans</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200x150?text=Shorts" alt="Shorts"><p>Shorts</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200x150?text=Shirts" alt="Shirts"><p>Shirts</p></div>
       </div>
     </section>
-  </main>
 
-  <div id="overlay" onclick="hideCart()"></div>
-
-  <div id="cartModal">
-    <h2>Your Cart</h2>
-    <ul id="cartItems"></ul>
-    <button onclick="proceedToCheckout()">Proceed to Checkout</button>
-    <button onclick="clearCart()">Clear Cart</button>
-  </div>
-
-  <div id="checkout" style="display: none;">
-    <h2>Checkout</h2>
-    <form class="checkout-form" onsubmit="return confirmOrder(event)">
-      <input type="text" placeholder="Full Name" required>
-      <input type="text" placeholder="Address" required>
-      <input type="text" placeholder="Card Number" required>
-      <input type="text" placeholder="Expiration (MM/YY)" required>
-      <input type="text" placeholder="CVC" required>
-      <button type="submit">Place Order</button>
-    </form>
-  </div>
-
-  <div id="confirmation" class="confirmation" style="display: none;">
-    <h2>Thank you for your purchase!</h2>
-    <p>Your order has been placed successfully.</p>
-    <button onclick="goHome()">Back to Home</button>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Unique Style. All rights reserved.</p>
-  </footer>
-
-  <script>
-    let cart = [];
-
-    function addToCart(item) {
-      cart.push(item);
-      updateCartCount();
-      alert(item + ' added to cart!');
-    }
-
-    function updateCartCount() {
-      document.getElementById('cart-count').innerText = cart.length;
-    }
-
-    function showCart() {
-      document.getElementById('cartItems').innerHTML = cart.map(item => `<li>${item}</li>`).join('');
-      document.getElementById('cartModal').style.display = 'block';
-      document.getElementById('overlay').style.display = 'block';
-    }
-
-    function hideCart() {
-      document.getElementById('cartModal').style.display = 'none';
-      document.getElementById('overlay').style.display = 'none';
-    }
-
-    function clearCart() {
-      cart = [];
-      updateCartCount();
-      hideCart();
-    }
-
-    function proceedToCheckout() {
-      hideCart();
-      document.querySelector('main').style.display = 'none';
-      document.getElementById('checkout').style.display = 'block';
-    }
-
-    function confirmOrder(event) {
-      event.preventDefault();
-      cart = [];
-      updateCartCount();
-      document.getElementById('checkout').style.display = 'none';
-      document.getElementById('confirmation').style.display = 'block';
-      return false;
-    }
-
-    function goHome() {
-      document.getElementById('confirmation').style.display = 'none';
-      document.querySelector('main').style.display = 'block';
-    }
-  </script>
-</body>
-</html>
+    <!-- Shoes Section -->
+    <section class="category">
+      <h2>👟 Shoes</h2>
+      <div class="products">
+        <div class="product"><img src="https://via.placeholder.com/200x150?text=Jordan" alt="Jordan"><p>Jordan</p></div>
+        <div class="product"><img src="https://via.placeholder.com/200x150?text=Nike" alt="Nike"><p>Nike</p></div>
+        <div class="product"><img src="
