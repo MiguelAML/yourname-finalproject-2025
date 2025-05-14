@@ -62,3 +62,42 @@ footer {
   padding: 15px;
   font-size: 0.9em;
 }
+
+.store-info {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 50px auto;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.store-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.info-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #333;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.info-links a:hover {
+  background-color: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}
+
