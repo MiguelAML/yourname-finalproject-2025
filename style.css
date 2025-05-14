@@ -109,22 +109,6 @@ footer {
   color: #333;
 }
 
-.login-create-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.login-create-links a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  border: 2px solid #333;
-  padding: 12px 20px;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
 login-create-links a:hover {
   background-color: #27ae60;
   color: white;
