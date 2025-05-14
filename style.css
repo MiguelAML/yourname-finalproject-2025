@@ -101,6 +101,7 @@ footer {
   border-color: #27ae60;
 }
 
+/* Login and Create Account Section */
 .login-create {
   background-color: #f2f2f2;
   padding: 30px 20px;
@@ -138,5 +139,3 @@ footer {
   color: white;
   border-color: #27ae60;
 }
-
-
