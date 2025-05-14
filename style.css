@@ -134,10 +134,4 @@ footer {
   transition: background 0.3s ease;
 }
 
-.login-create-links a:hover {
-  background-color: #27ae60;
-  color: white;
-  border-color: #27ae60;
-}
-
 
